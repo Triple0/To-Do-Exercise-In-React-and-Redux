@@ -1,5 +1,5 @@
 import { combineReducers, createStore } from 'redux';
-import { taskReducer } from './store/LayoutForm/reducers';
+import { taskReducer } from './LayoutForm/reducers';
 
 // Combine all the reducers together for a global app.
 const rootReducer = combineReducers( {
