@@ -29,12 +29,12 @@ export function taskReducer(
     case DELETE_TASK_FROM_LIST:
       return {
         ...state,
-        tasks: state.tasks.filter((task) => task.id !== action.payload),
+        tasks: state.tasks.filter( task => task.id !== action.payload ),
       };
     case ADD_TASK_TO_LIST:
       return {
         ...state,
-        tasks: [...state.tasks, action.payload],
+        tasks: [...state.tasks, action.payload]
       };
 
     default:

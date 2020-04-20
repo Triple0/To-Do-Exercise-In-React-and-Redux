@@ -20,5 +20,4 @@ interface AddTaskToList {
     payload: Task
 }
 
-
 export type TaskActionTypes = AddTaskToList | DeleteTaskFromList;
