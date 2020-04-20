@@ -46,6 +46,7 @@ constructor(props: ILayoutFormProps) {
                 name: newTaskValue
             });
         }
+        
 
     }
 
@@ -66,7 +67,7 @@ constructor(props: ILayoutFormProps) {
                     <Form onSubmit={this.newTask}>
                         <Form.Field>
                             <label htmlFor="new-task">Enter New Task</label>
-                            <Input name="new-task" type='text' placeholder='Enter New Task Here' />
+                            <Input name="new-task" type='text' placeholder='Enter New Task Here' defaultValue={this.state.input} />
                         </Form.Field>
                         <Input type="submit" value="Add Task" />
                     </Form>
